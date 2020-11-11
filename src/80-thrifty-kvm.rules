@@ -1,3 +1,2 @@
-SUBSYSTEM=="usb", ATTRS{idVendor}=="[VENDOR_ID]", ACTION=="add", RUN+="$(DESTDIR)$(PREFIX)/sbin/on-keyboard-plug.sh"
-SUBSYSTEM=="usb", ATTRS{idVendor}=="[VENDOR_ID]", ACTION=="remove", RUN+="$(DESTDIR)$(PREFIX)/sbin/on-keyboard-unplug.sh"
-
+SUBSYSTEM=="usb", ATTRS{idVendor}=="045e", ACTION=="add", RUN+="$(DESTDIR)$(PREFIX)/sbin/on-keyboard-plug.sh"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="045e", ACTION=="remove", RUN+="$(DESTDIR)$(PREFIX)/sbin/on-keyboard-unplug.sh"
